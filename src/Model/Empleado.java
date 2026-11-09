@@ -1,9 +1,11 @@
+//Representa un Empleado, hereda los datos de persona y añade cargo y sueldo
+
 package Model;
 
 public class Empleado extends Persona {
     private String cargo;
     private double sueldo;
-
+    //Constructor
     public Empleado(String nombre, String apellido, Rut rut, Direccion direccion, String cargo, double sueldo) {
         super(nombre, apellido, rut, direccion);
         this.cargo = cargo;
@@ -23,7 +25,7 @@ public class Empleado extends Persona {
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
-
+    //Tostring
     @Override
     public String toString() {
         return "[EMPLEADO] " + super.toString() + " | Cargo: " + cargo + " | Sueldo: $" + sueldo;

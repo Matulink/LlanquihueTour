@@ -1,5 +1,8 @@
 package Model;
-
+/*
+Clase Base Persona donde se aplica el encapsulamiento(atributos privados).
+Además aplica composición ya re rescata los objetos rut y direccion
+*/
 public class Persona {
     private String nombre;
     private String apellido;
@@ -18,15 +21,12 @@ public class Persona {
     public String getNombre() {
         return nombre;
     }
-
     public String getApellido() {
         return apellido;
     }
-
     public Rut getRut() {
         return rut;
     }
-
     public Direccion getDireccion() {
         return direccion;
     }
@@ -35,19 +35,16 @@ public class Persona {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-
     public void setRut(Rut rut) {
         this.rut = rut;
     }
-
     public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
     }
-
+//ToString
     @Override
     public String toString() {
         return "Nombre: " + nombre + " " + apellido +

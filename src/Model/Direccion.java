@@ -5,7 +5,6 @@ public class Direccion {
     public String calle, ciudad, region;
     public int num;
 
-
 //Constructor
     public Direccion(String calle, int num, String ciudad, String region) {
         this.calle = calle;

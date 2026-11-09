@@ -1,3 +1,5 @@
+//Representa un cliente heredando los datos de persona añadiendo el tipo de turista
+
 package Model;
 
 public class Cliente extends Persona {
